@@ -148,6 +148,7 @@
         _animationGroup = [CAAnimationGroup animation];
         _animationGroup.animations = @[self.strokeAnimationEnd,self.rotateAnimation];
         _animationGroup.duration = self.totalTime;
+        _animationGroup.removedOnCompletion = NO;
     }
     return _animationGroup;
 }
